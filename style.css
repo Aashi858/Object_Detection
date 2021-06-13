@@ -1,6 +1,6 @@
 body{
     background-size: cover;
-    background-position: center;
+    background-position: left;
 }
 .heading{
     font-family: 'Viaoda Libre', cursive;
@@ -49,7 +49,42 @@ body{
    text-decoration: none;
  }
  .gradient:active {
-    background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
  }
+#image1_heading{
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    background-color: lightskyblue;
+    margin-top: 0%;
+}
+.back{
+    margin-left: 90%;
+    margin-top: -30px;
+    width: 100px;
+    height: 40px;
+    padding-right: 20px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, deepskyblue 0%, lightblue  51%, deepskyblue  100%);
+    border-color: deepskyblue;
+    box-shadow: 5px 5px 8px dimgrey;
+}
+.back:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+ }
+.image{
+    width: 50px;
+    height: 60px;
+    margin-left: 96%;
+    margin-top: -49px;
+}
+.H3{
+    font-family: Georgia;
+    font-size: 20px;
+}
+canvas{
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px dimgray;
+}
