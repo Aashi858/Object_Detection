@@ -1,0 +1,55 @@
+body{
+    background-size: cover;
+    background-position: center;
+}
+.heading{
+    font-family: 'Viaoda Libre', cursive;
+}
+
+.btn1 {
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    border-color: dodgerblue;
+    margin-top: 50px;
+    }
+.btn2 {
+    background-image: linear-gradient(to right, #e82399 0%, #e879bb  51%, #e82399  100%);
+    border-color:mediumvioletred;
+    }
+.btn3 {
+    background-image: linear-gradient(to right, #7411d1 0%, #bb88eb  51%, #7411d1  100%);
+    border-color:rebeccapurple;
+    }
+.btn4 {
+    background-image: linear-gradient(to right, #e8b007 0%, #edd077  51%, #e8b007  100%);
+    border-color:darkorange;
+    }   
+.btn5 {
+    background-image: linear-gradient(to right, #08c23c 0%, #7df094  51%, #08c23c  100%);
+    border-color:limegreen;
+    }   
+.gradient {
+    margin-bottom: 20px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   width: 30%;
+   height: 9%;
+   border-radius: 25px;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+ .gradient:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+ .gradient:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+ }
