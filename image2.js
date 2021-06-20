@@ -1,5 +1,6 @@
 img2 = "";
 status = "";
+objects = [];
 function preload(){
     img2 = loadImage("image2.jpg");
 }
@@ -11,6 +12,17 @@ function setup(){
 }
 function draw(){
     image(img2,0,0,550,350);
+    if(status != ""){
+        document.getElementById("status").innerHTML = " : Object Detected";
+        for(i = 0 ; i < objects.length; i++){
+            fill("#4287f5");
+            stroke("#0763f7");
+            percentage = floor(objects[i].confidence * 100);
+            text(objects[i].label + " " + percentage + "%" ,objects[i].x, objects[i].y + 10);
+            noFill();
+            rect(objects[i].x,objects[i].y,objects[i].width,objects[i].height);
+        }
+    }
 }
 function model_loaded(){
     console.log("Model is loaded!");
@@ -23,6 +35,7 @@ function got_results(error,results){
     }
     else if(results){
         console.log(results);
+        objects = results;
     }
 }
 function back(){
